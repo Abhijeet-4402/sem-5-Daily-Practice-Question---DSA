@@ -1,0 +1,3 @@
+// Last updated: 5/12/2025, 12:18:51 am
+1class Solution { public int countSubstrings(String s) { int odd = 0; for (int axis = 0; axis < s.length(); axis++) for (int orbit = 0; orbit < s.length(); orbit++) if (axis - orbit >= 0 && axis + orbit < s.length() && s.charAt(axis - orbit) == s.charAt(axis + orbit)) odd++; else break; int even = 0; for (double axis = 0.5; axis < s.length(); axis++) for (double orbit = 0.5; orbit < s.length(); orbit++) if (axis - orbit >= 0 && axis + orbit < s.length() && s.charAt((int)(axis - orbit)) == s.charAt((int)(axis + orbit))) even++; else break; return odd + even;}}
+2
